@@ -42,7 +42,7 @@ public class MyDate {
             return false;
         }
       MyDate date = (MyDate) o;
-        return day.equals(date.getDay()) || month.equals(date.getMonth()) || year == date.getYear();
+        return day.equals(date.getDay()) && month.equals(date.getMonth()) && year == date.getYear();
     }
     public int hashCode(){
         return Objects.hash(day, month, year);
